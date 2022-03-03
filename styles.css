@@ -1,0 +1,180 @@
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(14, 1, 15);
+    margin: 0;
+}
+
+#calculator_body{
+    width: 1000px;
+    height: 580px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+h1{
+    color: whitesmoke;
+    text-align: center;
+
+    margin: 2px;
+}
+
+#container{
+    width: 1000px;
+    height: 550px;
+    border-radius: 20px;
+    background-image:url(/calc_background.jpg) ;
+    margin: 20px auto;
+}
+
+h3{
+    color: rgb(14, 1, 15);
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#calculator{
+    width: 320px;
+    height: 550px;
+    border: 5px solid red;
+    background-color: rgb(255, 219, 205);
+    margin: 0 auto;
+    top: 20px;
+    top: 4px;
+    position:relative;
+    border-radius: 25px;
+}
+
+#result {
+    height: 120px; 
+    font-weight:750;
+    background-color: white;
+    border: 3px solid red;
+    border-radius: 8px;
+}
+
+#history {
+    text-align: right;
+    height: 30px; 
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px; 
+    color:white; 
+    background-color: rgb(134, 121, 145); 
+    color: black; 
+    background-color: white; 
+}
+
+#output{
+    position:absolute;
+    text-align: right;
+    height: 60px;
+    max-width: 90%;
+    margin: 5px 20px;
+    overflow: auto;
+    font-size: 20px;
+    font-size: 20px;
+    background-color: white;
+}
+
+#keyboard{
+height: 400px;
+}
+
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-weight:750;
+    font-size: 15px;
+}
+.number, .empty{
+    background-color: #eaedef;
+
+}
+
+.number, .operator{
+    cursor: pointer; 
+}
+
+.operator:active, .number:active {
+    font-size: 13px;
+    font-size: 15px;
+}
+
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+
+button:nth-child(4){
+    font-size: 20px;
+    background-color: chocolate;
+}
+
+button:nth-child(8){
+    font-size: 20px;
+    background-color:cornflowerblue;
+}
+
+button:nth-child(12){
+    font-size: 20px;
+    background-color:cyan;
+}
+
+button:nth-child(16){
+    font-size: 20px;
+    background-color:darkkhaki;
+}
+
+button:nth-child(20){
+    font-size: 20px;
+    background-color:deeppink;
+}
+
+
+
+/* Media Queries*/
+
+@media screen and (max-width:1025px) {
+    #container{
+        
+        margin-top: 3em;
+        margin-left: 10em;
+        transform: scale(0.9,0.9);
+    }
+}
+
+
+@media screen and (max-width:930px){
+    #container{
+        margin-top: 80em;
+        margin-left: 50em;
+        transform: scale(4,4);
+    }
+}
+
+
+@media screen and (max-width:550px){
+    #container{
+        margin-top: 50em;
+        margin-left: 15em;
+        transform: scale(3,3);
+    }
+}
+
+@media screen and (max-width:300px){
+    #container {
+        margin-top: 40em;
+        margin-left: 5em;
+        transform: scale(3,3);
+    }
+}
