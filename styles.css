@@ -8,7 +8,17 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(14, 1, 15);
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
+
+
+#container{
+    width: 1000px;
+    height: 550px;
+    margin: 10px 10px;
+}
+
 
 #calculator_body{
     width: 1000px;
@@ -20,16 +30,7 @@ body{
 h1{
     color: whitesmoke;
     text-align: center;
-
     margin: 2px;
-}
-
-#container{
-    width: 1000px;
-    height: 550px;
-    border-radius: 20px;
-    background-image:url(/calc_background.jpg) ;
-    margin: 20px auto;
 }
 
 h3{
@@ -43,9 +44,7 @@ h3{
     height: 550px;
     border: 5px solid red;
     background-color: rgb(255, 219, 205);
-    margin: 0 auto;
-    top: 20px;
-    top: 4px;
+    margin: 0 auto; 
     position:relative;
     border-radius: 25px;
 }
@@ -131,11 +130,16 @@ button:nth-child(12){
 }
 
 button:nth-child(16){
-    font-size: 20px;
     background-color:darkkhaki;
 }
 
-button:nth-child(20){
+
+button:nth-child(19){
+    font-size: 20px;
+    background-color:#eaedef;
+}
+
+button:nth-chid(20){
     font-size: 20px;
     background-color:deeppink;
 }
@@ -144,37 +148,14 @@ button:nth-child(20){
 
 /* Media Queries*/
 
-@media screen and (max-width:1025px) {
+@media screen and (min-width: 280px) and (max-width:550px) {
     #container{
-        
-        margin-top: 3em;
-        margin-left: 10em;
-        transform: scale(0.9,0.9);
+        margin-left: 20px;
+        transform:scale(0.7, 0.7);
     }
-}
-
-
-@media screen and (max-width:930px){
+    
+@media screen and (min-width: 820px) and (max-width:1025px) {
     #container{
-        margin-top: 80em;
-        margin-left: 50em;
-        transform: scale(4,4);
+        margin-left: 5px;
+        transform:scale(0.9, 0.9);
     }
-}
-
-
-@media screen and (max-width:550px){
-    #container{
-        margin-top: 50em;
-        margin-left: 15em;
-        transform: scale(3,3);
-    }
-}
-
-@media screen and (max-width:300px){
-    #container {
-        margin-top: 40em;
-        margin-left: 5em;
-        transform: scale(3,3);
-    }
-}
